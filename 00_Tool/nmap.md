@@ -6,7 +6,7 @@
 ### SERVICE
 - そのポートで起動しているサービス名を表示
   
-  ｆｆ
+
 ![image](uploads/dd125b10a0f003bd67308f584c36b31a/image.png)
 
 # STATEの見方
