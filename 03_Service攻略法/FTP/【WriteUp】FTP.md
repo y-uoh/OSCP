@@ -146,6 +146,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2024-06-10 05:00:
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2024-06-10 05:00:40
 
 ```
+`hydra`のオプションについて：
 - `-l`：ユーザ名の指定
 - `-P`：パスワードリストの指定
 - `/usr/share/wordlist/rockyou.txt`：`hydra`や`gobuster`などで頻出のパスワードリスト。まずはこれってやつ
