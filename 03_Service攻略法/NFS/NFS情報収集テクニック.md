@@ -43,6 +43,12 @@ mount.nfs: (linux nfs-utils 2.6.4)
 ```
 バージョンが`linux nfs-utils 2.6.4`であるということがわかる   
   
-## 2.参　考
+## 2.サーバー設定情報
+- `/etc/exports`：通常サーバーの設定は基本このファイルに書き込む。デフォルトでおいてなければ作成する
+- `/etc/exports.d`：`/etc/exports`がなく、`/etc/exports.d`があれば、このディレクトリの配下にファイルを追加する
+
+  
+## 3.参　考
 [【CentOS】NFSマウント コマンドまとめ -Qiita ](https://qiita.com/umaibou1126/items/6130f57909035dd2bf6d)  
+[nfs環境の覚書 -Qiita](https://qiita.com/ch7821/items/345ea842ca73c9063ed3)  
   
