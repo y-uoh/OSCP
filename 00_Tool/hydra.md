@@ -1,5 +1,6 @@
 ## 1.hydraとは
 - 能動的パスワードクラックを行うツール
+- 総当たりでパスワードを試行する
 - SSHやFTPなどのサービスや、Webアプリのログインフォームに対して攻撃が可能
 - `wordlist`の使用が可能  
   
@@ -21,12 +22,14 @@ hydra -L <ユーザリストファイル> -P <パスワードリスト> http:<�
 - `-V`：詳細の出力
 - `-vV`：更に詳細の出力
 - `-f`：ログインに成功したらそのタイミングで総当たりをやめる
+- `-t`：ターゲット毎に並列に接続する数を指定（デフォルト：16）
   
 ## 4.頻出パスワードリスト
 - `/usr/share/wordlists/rockyou.txt`  
   
 ## 5.実行例
-`mike`の`パスワード`が`password`であると解析  
+- `ユーザ名`が`mike`で`パスワードリスト`に`/usr/share/wordlists/rockyou.txt`を指定  
+- パスワードが`password`であると解析  
 ```bash
 ┌──(kali㉿kali)-[~]
 └─$ hydra -l mike -P /usr/share/wordlists/rockyou.txt -vV 10.10.35.212 ftp     
