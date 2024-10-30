@@ -60,8 +60,13 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2024-06-09 21:55:
 1 of 1 target successfully completed, 1 valid password found
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2024-06-09 21:55:28
 ```
+
+## 6.TIPS
+- 並列接続数
+  - `-tオプション`は同時に実行するタスクの数を設定できるが、-tを付けないデフォルト設定は16個同時にタスクを実行する。
+  - しかし、タスクが多いと、検知漏れ（フォールスネガティブ）になる可能性があるため、同時タスク数を4つに減らすのが最適だとされている 
   
-## 6.参　考
+## 7.参　考
 [kali linuxでhydraを使ってパスワードクラックをしてみた - Qiita](https://qiita.com/miya_zato/items/0c32dc71208460515e34)  
 [ハッカーはhydraでログインクラックを確認する(Kali Linux) - AIを武器にホワイトハッカーになる](https://whitemarkn.com/learning-ethical-hacker/hydra/)  
   
